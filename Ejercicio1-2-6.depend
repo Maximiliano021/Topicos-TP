@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1749821386 source:c:\users\maxi-\onedrive\documents\facultad\topicos-programacion\tp_2025_-1c_1\ejercicio1-2-6\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1749834403 c:\users\maxi-\onedrive\documents\facultad\topicos-programacion\tp_2025_-1c_1\ejercicio1-2-6\funciones.h
+
+1749813801 source:c:\users\maxi-\onedrive\documents\facultad\topicos-programacion\tp_2025_-1c_1\ejercicio1-2-6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1749834481 source:c:\users\maxi-\onedrive\documents\facultad\topicos-programacion\tp_2025_-1c_1\topicos-tp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1749834403 c:\users\maxi-\onedrive\documents\facultad\topicos-programacion\tp_2025_-1c_1\topicos-tp\funciones.h
+
+1749834465 source:c:\users\maxi-\onedrive\documents\facultad\topicos-programacion\tp_2025_-1c_1\topicos-tp\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
