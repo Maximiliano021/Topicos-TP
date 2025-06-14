@@ -4,21 +4,26 @@
 #include "funciones.h"
 
 // Convierte la fecha a aa-mm-dd
-Fecha parsearFecha(char *fechaStr){
-  Fecha fecha;
+Fecha parsearFecha(char *fechaStr)
+{
+    Fecha fecha;
 
-  // Formateo la fecha dependiendo del formato
-  if (strchr(fechaStr, '-') != NULL) {
-    sscanf(fechaStr, "%d-%d-%d", &fecha.a, &fecha.m, &fecha.d);
-  } else {
-    sscanf(fechaStr, "%d/%d/%d", &fecha.d, &fecha.m, &fecha.a);
-  }
+    // Formateo la fecha dependiendo del formato
+    if (strchr(fechaStr, '-') != NULL)
+    {
+        sscanf(fechaStr, "%d-%d-%d", &fecha.a, &fecha.m, &fecha.d);
+    }
+    else
+    {
+        sscanf(fechaStr, "%d/%d/%d", &fecha.d, &fecha.m, &fecha.a);
+    }
 
-  return fecha;
+    return fecha;
 }
 
 // Procesa una línea del archivo, extrayendo la fecha y el resto de la información
-void procesarLinea(char *linea, char *lineaCorregida){
+void procesarLinea(char *linea, char *lineaCorregida)
+{
     char fechaStr[20];
     char *act;
     char fechaConvertida[12];
@@ -29,7 +34,8 @@ void procesarLinea(char *linea, char *lineaCorregida){
     act++; // Salto la comilla
 
     // Copio la fecha hasta la siguiente comilla
-    while (*act != '"') {
+    while (*act != '"')
+    {
         fechaStr[i] = *act;
         act++;
         i++;
@@ -59,15 +65,18 @@ void procesarLinea(char *linea, char *lineaCorregida){
 }
 
 // Convierte comas a puntos en el string dado
-void convertirComaAPunto(char *indice){
-  char *act = indice;
+void convertirComaAPunto(char *indice)
+{
+    char *act = indice;
 
-  // Recorro el string buscando comas
-  while (*act != '\0') {
-      // Si encuentro una coma, la cambio por punto
-      if (*act == ',') {
-          *act = '.';
-      }
-      act++;
-  }
+    // Recorro el string buscando comas
+    while (*act != '\0')
+    {
+        // Si encuentro una coma, la cambio por punto
+        if (*act == ',')
+        {
+            *act = '.';
+        }
+        act++;
+    }
 }

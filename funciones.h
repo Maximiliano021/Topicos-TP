@@ -4,7 +4,8 @@
 #define TODO_OK 1
 #define TAM_LINEA 200
 
-typedef struct {
+typedef struct
+{
     int d;
     int m;
     int a;
