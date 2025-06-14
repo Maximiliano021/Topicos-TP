@@ -10,11 +10,10 @@ typedef struct {
     int a;
 } Fecha;
 
-// Convierte fecha dia/mes/año a año-mes-dia
-void convertirFecha(Fecha *fechaOriginal, char *fechaConvertida);
-
 Fecha parsearFecha(char *fechaStr);
 
 void procesarLinea(char *linea, char *lineaCorregida);
+
+void convertirComaAPunto(char *indice);
 
 #endif // FUNCIONES_H_INCLUDED
